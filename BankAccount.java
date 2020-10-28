@@ -8,4 +8,12 @@ public class BankAccount {
 		this.accountID = accountID;
 		this.password = password;
 	}
+	
+	public double getBalance(){
+		return this.balance;
+	}
+	
+	public int getAccountID(){
+		return this.accountID;
+	}
 }
