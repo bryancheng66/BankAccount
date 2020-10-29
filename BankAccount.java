@@ -18,7 +18,7 @@ public class BankAccount {
 	}
 	
 	public void setPassword(String newPass){
-		this.password = newPassword;
+		this.password = newPass;
 	}	
 
 	public boolean deposit(double amount){
@@ -39,6 +39,6 @@ public class BankAccount {
 		}
 	}
 	public String toString(){
-		return this.accountID + "\t" + this.balance;
+		return "#" + this.accountID + "\t" + "$" + this.balance;
 	}
 }
