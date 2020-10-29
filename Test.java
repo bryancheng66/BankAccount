@@ -8,6 +8,10 @@ public class Test {
 		System.out.println("Balance: " + MyAccount.getBalance());	
 		MyAccount.deposit(-20);	
 		System.out.println("Balance: " + MyAccount.getBalance());	
+		MyAccount.withdraw(200);
+		System.out.println("Balance: " + MyAccount.getBalance());	
+		MyAccount.withdraw(20);
+		System.out.println("Balance: " + MyAccount.getBalance());	
 
 	}
 }
