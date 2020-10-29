@@ -12,6 +12,6 @@ public class Test {
 		System.out.println("Balance: " + MyAccount.getBalance());	
 		MyAccount.withdraw(20);
 		System.out.println("Balance: " + MyAccount.getBalance());	
-
+		System.out.println(MyAccount.toString());
 	}
 }
