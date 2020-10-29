@@ -17,7 +17,7 @@ public class BankAccount {
 		return this.accountID;
 	}
 	
-	public void setPassword(String newPassword){
+	public void setPassword(String newPass){
 		this.password = newPassword;
 	}	
 
