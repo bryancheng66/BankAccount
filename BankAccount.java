@@ -31,14 +31,23 @@ public class BankAccount {
 	}
 
 	public boolean withdraw(double amount){
-		if (amount < 0 || this.balance - amount < 0){
-			return false;
-		} else {
+		if (amount > 0 && this.balance - amount > 0){
 			balance -= amount;
 			return true;
+		} else {
+			return false;
 		}
 	}
+
 	public String toString(){
 		return "#" + this.accountID + "\t" + "$" + this.balance;
+	}
+
+	private boolean authenticate(String password){
+		return this.password.equals(password);
+	}
+
+	public boolean transferTo(BankAccount other, double amount, String password){
+		return this.authenticate(password) && this.withdraw(amount) && other.deposit(amount);
 	}
 }
